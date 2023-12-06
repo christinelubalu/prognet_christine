@@ -1,0 +1,22 @@
+// t2.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    var biodataForm = document.getElementById("biodataForm");
+
+    biodataForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var namaValue = document.getElementById("nama").value;
+        var umurValue = document.getElementById("umur").value;
+        var alamatValue = document.getElementById("alamat").value;
+        var emailValue = document.getElementById("email").value;
+
+        // Lakukan sesuatu dengan nilai-nilai yang diambil dari formulir
+        console.log("Nama: " + namaValue);
+        console.log("Umur: " + umurValue);
+        console.log("Alamat: " + alamatValue);
+        console.log("Email: " + emailValue);
+
+        // Tambahkan logika atau pengiriman data ke server di sini
+    });
+});
